@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+<body class="bodyEq">
+    <header> 
+        <div class="container-fluid">
+            <div>
+                <a href="/"><img class="logo"src="/img/logo.png" alt="logo"></a>
+            </div>
+            <%- include('../partials/navbar') %>
+        </div>    
+    </header>
+
+    <main class="main-canchas">
+        <div class="titulo-canchas">
+            <h2>SELECCIONÁ FECHA Y HORARIO</h2>
+        </div>
+        <div class="container-padre-canchas">
+            <div class="container-canchas cancha1">
+                <h2>Cancha descubierta</h2>
+                <img class="imagen" src="/img/cancha-descubierta.jpg" width="300px" height="150px">
+                
+                <section class="formulario-canchas">
+                    <div class="campos-canchas">
+                        <label for="formGroupExampleInput" class="form-label label-canchas">Fecha:</label>
+                        <form>
+                            <input class="dates-canchas" type="date" name="fecha-cancha1"  min="<%= moment().format('YYYY-MM-DD') %>" max="<%= moment().add(1, 'month').format('YYYY-MM-DD') %>">
+                        </form>
+                    </div>
+                    <div class="campos-canchas">
+                        <label for="formGroupExampleInput2" class="form-label horario-canchas label-canchas">Horario:</label>
+                        <select class="form-control inputs-canchas">
+                            <option value="18:00hs" selected>18:00hs</option>
+                            <option value="19:00hs">19:00hs</option>
+                            <option value="20:00hs">20:00hs</option>
+                        </select>
+                    </div>
+                    <div class="campos-canchas">
+                        <label for="exampleInputEmail1" class="form-label label-canchas">Precio:</label>
+                        <input type="text" class="form-control inputs-canchas precio-canchas" id="exampleInputEmail1" placeholder="$$$$$">
+                    </div>
+                </section>
+                
+                
+            </div>
+            <div class="container-canchas">
+                <h2>Cancha cubierta</h2>
+                <img class="imagen" src="/img/cancha-techada.jpg" width="300px" height="150px">
+                <section class="formulario-canchas">
+                    <div class="campos-canchas">
+                        <label for="formGroupExampleInput" class="form-label label-canchas">Fecha:</label>
+                        <form>
+                            <input class="dates-canchas" type="date" name="fecha-cancha1"  min="<%= moment().format('YYYY-MM-DD') %>" max="<%= moment().add(1, 'month').format('YYYY-MM-DD') %>">
+                        </form>
+                    </div>
+                    <div class="campos-canchas">
+                        <label for="formGroupExampleInput2" class="form-label horario-canchas label-canchas">Horario:</label>
+                        <select class="form-control inputs-canchas">
+                            <option value="18:00hs" selected>18:00hs</option>
+                            <option value="19:00hs">19:00hs</option>
+                            <option value="20:00hs">20:00hs</option>
+                        </select>
+                    </div>
+                    <div class="campos-canchas">
+                        <label for="exampleInputEmail1" class="form-label label-canchas">Precio:</label>
+                        <input type="text" class="form-control inputs-canchas precio-canchas" id="exampleInputEmail1" placeholder="$$$$$">
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="buttons-canchas">            
+            <a href="./carrito"><button class="btn btn-primary" type="submit">Aceptar</button></a>
+        </div>
+    </main>
+    <%- include('../partials/footer') %> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

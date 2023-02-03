@@ -1,0 +1,38 @@
+{
+  "name": "hay-equipo-",
+  "version": "1.0.0",
+  "description": "--- TEMÁTICA Y DESCRIPCIÓN DEL SITIO: ---\r   El sitio pretenderá resolver la necesidad que tendría una firma X de prestar el servicio de alquiler de sus canchas de futsal. Para ello, se diseñará una metodología de pre-reserva, la cual permitirá que un cliente registre/conforme un equipo y determine fecha/horario/cancha para que luego otro cliente, contemplando cierta información, cierre la reserva aceptando coordinar un encuentro con el primer cliente. Además, existirá la posibilidad de reservar un turno de manera tradicional, es decir, alquilando una cancha en una franja horaria teniendo dos o más equipos confirmados.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayancarelli/Hay-equipo-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayancarelli/Hay-equipo-/issues"
+  },
+  "homepage": "https://github.com/ayancarelli/Hay-equipo-#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.2",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.4",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.25.8",
+    "sequelize-cli": "^6.5.2"
+  }
+}

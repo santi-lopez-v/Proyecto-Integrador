@@ -1,0 +1,181 @@
+*{
+    font-family: "Lato";
+}
+
+
+/*STYLE DE CANCHAS*/
+.main-canchas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   /*  background-color: #5E658C; */
+    background: linear-gradient(#5E658C, #25306A, #5E658C);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.titulo-canchas{
+    background-color: #C7CAD9;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    margin-bottom: 15px;
+}
+.titulo-canchas h2{
+    margin: 10px 0px;
+}
+.container-padre-canchas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container-padre-canchas h2{
+    margin: 10px 0px;
+}
+.imagen{
+    border-radius: 15px;
+    border: solid 1px black;
+    box-shadow: 0px 0px 3px #25306A;
+}
+.container-canchas{
+    background: linear-gradient(to top, #4d5eb6, 40%, #C7CAD9);
+    font-family: "Lato";
+    border-radius: 15px;
+    width: 330px;
+    padding-bottom: 15px;
+    margin: auto;
+    border: solid 1px black;
+    box-shadow: 0px 0px 10px #25306A;
+}
+.container-canchas:hover{
+    width: 350px;
+    transition-property: width;
+    transition-duration: 0.5s;
+}
+.cancha1{
+    margin-bottom: 15px;
+}
+.formulario-canchas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dates-canchas{
+    border-radius: 5px;
+    background-color: #8A8EA6;
+    border: solid 1px black;
+    box-shadow: 0px 0px 3px #25306A;
+}
+.precio-canchas{
+    width: 130px;
+    height: 38px;
+}
+.label-canchas{
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.inputs-canchas{
+    max-width: 280px;
+    text-align: center;
+    background-color: #8A8EA6;
+    border: solid 1px black;
+    box-shadow: 0px 0px 3px #25306A;
+}
+.buttons-canchas{
+    margin-top: 15px;
+}
+.arrow-canchas{
+    color: grey;
+}
+.arrow-canchas:hover{
+    color: #25306A;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+.dates-canchas:hover{
+    background-color: aliceblue;
+    transition-property: background-color, width;
+    transition-duration: 0.5s;
+}
+.inputs-canchas:hover{
+    background-color: aliceblue;
+    transition-property: background-color, width;
+    transition-duration: 0.5s;
+}
+/*FIN STYLE DE CANCHAS*/
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+   
+    /* CANCHAS 768 */
+    .main-canchas{
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .container-padre-canchas{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .container-canchas{
+        margin-right: 40px;
+    }
+    .cancha1{
+        margin-bottom: 0%;
+    }
+    /* FIN CANCHAS 768 */
+    
+    /* CARRITO 768 */
+    .col-9{
+        display: flex;
+        align-items: center;
+        
+    }
+    #cuerpo-carrito{
+        align-items: center;
+        border-top:  solid 1px black;
+        border-bottom:  solid 1px black;
+        padding: 10px 0px;
+    }
+    .imagen-carrito{
+        display: flex;
+        width: 200px;
+       
+    }
+    #p-mobile{
+        display: none;
+    }
+    #p-web{
+        display: flex;
+    }
+    .reserva-fecha{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 10px;
+    }
+    /* FIN CARRITO 768 */
+    /* VISTA DE CONFIRMAR */
+    #argentina{
+        background-image: url("/img/argentina-campeon.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    
+    .texto-final{
+        font-weight: bold;
+        text-align: center;
+    }
+    }
